@@ -58,7 +58,7 @@ def get_where_to(where_to):
     '''
     word = "".join("" if el.isdigit() else el for el in where_to)
     number = "".join(el if el.isdigit() else "" for el in where_to)
-    stars = len(number) - 4
-    star_number = stars * '*' + number[-4:]
+    # stars = len(number) - 4
+    star_number = 2 * '*' + number[-4:]
     where_to = word + ''.join(star_number)
     return where_to
